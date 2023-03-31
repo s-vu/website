@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=IBM+Plex+Mono:wght@100;300&family=Roboto+Mono:ital,wght@0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+header {
+    position:fixed;
+    width: 100%;
+    z-index: 999;
+    background-color:white;
+}
+body {
+    min-width:1900px;
+    padding-bottom:60px;
+}
+.container {
+    margin: auto;
+    width: 60%;
+}
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size:56px !important;
+  font-weight:200;
+  float:left;
+  user-select: none;
+  border-bottom-color:#FFF;
+  color:#000;
+  transition: 10s;
+}
+header h1:hover {
+    background: linear-gradient(to right,  #1464c4 0%, #37D5D6 50%, #1464c4 100%);
+    background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 3.2s linear infinite;
+    
+}
+@keyframes animate {
+    to {
+        background-position: 200% center;
+      }
+}
+header ul {
+  float:right;
+  list-style:none;
+  padding:0;
+  padding-top: 23px;
+  margin:0;
+  user-select: none;
+}
+nav li {
+  display:inline-block;
+  padding:0px 20px;
+  margin:0px;
+  padding-top:45px;
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  user-select: none;
+  font-size:20px;
+}
+nav a {
+  text-decoration:none;
+  color:#000;
+  size:25px;
+  transition: .3s;
+}
+nav a:hover{
+  color:#1464c4;
+}
+
+#aboutme {
+    width: 60%;
+    margin:auto;
+    padding-top:200px;
+}
+#contact {
+  width: 60%;
+  margin:auto;
+}
+#aboutme h2, #contact h2 {
+    font-family: 'Fira Mono', sans-serif;
+    font-size:40px;
+}
+#aboutme p, #contact p {
+    font-family: 'Roboto', sans-serif;
+    font-weight:bold;
+    font-size:24px;
+}
+
+#locations i{
+  display:inline;
+}
+#locations p {
+  display:inline;
+  font-size:20px;
+  position: relative;
+  top: -4px;
+  padding-right:4px;
+}
+
+
+#contact a {
+  color: #1464c4;
+  text-decoration: none;
+  transition:.3s;
+}
+#contact a:hover {
+  text-shadow: 0 0 2px #1464c4;
+}
+#container2 {
+  width: 60%;
+  margin:auto;
+  display:flex;
+}
+#skills, #coursework {
+  display:inline-block;
+  width:50%;
+}
+#skills {
+  margin-right:5px;
+}
+#skills ul, #coursework ul {
+  font-family: 'Roboto', sans-serif;
+    font-weight:bold;
+    font-size:18px;
+    padding:0px;
+    list-style-type:disc;
+    list-style-position:inside;
+}
+#skills li, #coursework li {
+  padding: 2px 0px 2px 0px;
+}
+#coursework {
+  margin-left:5px;
+}
+#skills h2, #coursework h2 {
+    font-family: 'Fira Mono', sans-serif;
+    font-size:36px;
+}
+
+#links {
+  margin:auto;
+  width:60%;
+  padding-top:10px;
+}
+#links h2 {
+  font-family: 'Fira Mono', sans-serif;
+  font-size:40px;
+}
+
+.btn {
+  background-color: #000; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 4px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  height:54px;
+  transition:.5s;
+  border-radius:5px;
+  margin-right:5px;
+}
+img {
+  width:46px;
+  height:auto;
+}
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #1464c4;
+}
